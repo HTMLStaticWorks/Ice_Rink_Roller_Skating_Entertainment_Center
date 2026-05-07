@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon | GlowGlide</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(rgba(10,10,18,0.8), rgba(10,10,18,0.8)), url('https://images.unsplash.com/photo-1517177326520-2977f64267d7?q=80&w=2000&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        .countdown-box {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 20px;
+            min-width: 120px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="assets/images/logo.svg" alt="Logo" height="60" class="mb-5">
+        <h1 class="gradient-text mb-4">Something Big is Sliding In</h1>
+        <p class="opacity-75 fs-5 mb-5 mx-auto" style="max-width: 600px;">We're currently polishing the ice and tuning the neon lights for our new Summer Glow Festival. Stay tuned!</p>
+        
+        <div class="d-flex justify-content-center gap-3 mb-5">
+            <div class="countdown-box">
+                <div class="fs-1 fw-800 text-primary">12</div>
+                <div class="small opacity-50 uppercase">Days</div>
+            </div>
+            <div class="countdown-box">
+                <div class="fs-1 fw-800 text-primary">08</div>
+                <div class="small opacity-50 uppercase">Hours</div>
+            </div>
+            <div class="countdown-box">
+                <div class="fs-1 fw-800 text-primary">45</div>
+                <div class="small opacity-50 uppercase">Mins</div>
+            </div>
+        </div>
+        
+        <div class="mx-auto" style="max-width: 400px;">
+            <p class="mb-3">Notify me when it's live:</p>
+            <div class="input-group">
+                <input type="email" class="form-control bg-dark border-secondary text-white p-3" placeholder="Email Address">
+                <button class="btn btn-primary px-4">Notify Me</button>
+            </div>
+        </div>
+        
+        <div class="mt-5">
+            <a href="index.html" class="text-white opacity-50 small"><i class="bi bi-arrow-left me-2"></i> Back to Main Site</a>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing & Packages | GlowGlide</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo"><img src="assets/images/logo.svg" alt="Logo"></a>
+                <ul class="nav-menu d-none d-xl-flex">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="pricing.html" class="nav-link active">Pricing</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="header-actions">
+                    <button id="theme-toggle" class="btn-icon"><i class="bi bi-moon-stars"></i></button>
+                    <button id="rtl-toggle" class="btn-icon">RTL</button>
+                    <a href="contact.html" class="btn-primary d-none d-xl-inline-block">Book Now</a>
+                    <div class="hamburger d-xl-none"><span></span><span></span><span></span></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="pricing-hero text-center" style="padding-top: 150px; background: #0a0a12;">
+        <div class="container">
+            <h1 class="gradient-text mb-3">Transparent Pricing</h1>
+            <p class="opacity-75 fs-5">No hidden fees. Just pure skating joy.</p>
+        </div>
+    </section>
+
+    <!-- Pricing Tables -->
+    <section class="pricing-tables py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Session Entry -->
+                <div class="col-lg-4">
+                    <div class="custom-card text-center h-100">
+                        <h3 class="mb-4">Session Entry</h3>
+                        <div class="price mb-4"><span class="fs-1 fw-800">$15</span><span class="opacity-50">/adult</span></div>
+                        <ul class="list-unstyled mb-5 opacity-75">
+                            <li class="mb-3">Standard Session (2.5h)</li>
+                            <li class="mb-3">Ice or Roller Choice</li>
+                            <li class="mb-3">Locker Access Included</li>
+                            <li class="mb-3 text-decoration-line-through">Skate Rental</li>
+                        </ul>
+                        <a href="contact.html" class="btn-outline w-100">Buy Entry</a>
+                    </div>
+                </div>
+                <!-- All-In Bundle -->
+                <div class="col-lg-4">
+                    <div class="custom-card text-center h-100 border-primary" style="transform: scale(1.05); background: rgba(0, 242, 255, 0.05);">
+                        <div class="badge bg-primary text-black mb-3 px-3 py-2">MOST POPULAR</div>
+                        <h3 class="mb-4">All-In Bundle</h3>
+                        <div class="price mb-4"><span class="fs-1 fw-800">$25</span><span class="opacity-50">/person</span></div>
+                        <ul class="list-unstyled mb-5 opacity-75">
+                            <li class="mb-3">Standard Session (2.5h)</li>
+                            <li class="mb-3">Skate Rental Included</li>
+                            <li class="mb-3">1x Soft Drink Voucher</li>
+                            <li class="mb-3">10 Arcade Credits</li>
+                        </ul>
+                        <a href="contact.html" class="btn-primary w-100">Get All-In</a>
+                    </div>
+                </div>
+                <!-- Glow Session -->
+                <div class="col-lg-4">
+                    <div class="custom-card text-center h-100 border-accent">
+                        <h3 class="mb-4">Glow Pass</h3>
+                        <div class="price mb-4"><span class="fs-1 fw-800">$30</span><span class="opacity-50">/night</span></div>
+                        <ul class="list-unstyled mb-5 opacity-75">
+                            <li class="mb-3">Late Night Access (3h)</li>
+                            <li class="mb-3">Neon Lights & DJ</li>
+                            <li class="mb-3">Glow Accessories Included</li>
+                            <li class="mb-3">Skate Rental Included</li>
+                        </ul>
+                        <a href="contact.html" class="btn-outline w-100" style="border-color: var(--accent); color: var(--accent);">Book Glow</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rental Pricing -->
+            <div class="mt-5 pt-5">
+                <h2 class="text-center mb-5">Rental & Extras</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="custom-card">
+                            <div class="d-flex justify-content-between align-items-center mb-3 border-bottom border-secondary pb-3">
+                                <div>
+                                    <h5 class="mb-0">Ice Skate Rental</h5>
+                                    <p class="small opacity-50 mb-0">Professional grade blades</p>
+                                </div>
+                                <span class="fw-bold fs-4">$5.00</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mb-3 border-bottom border-secondary pb-3">
+                                <div>
+                                    <h5 class="mb-0">Roller Skate / Blade Rental</h5>
+                                    <p class="small opacity-50 mb-0">High-performance wheels</p>
+                                </div>
+                                <span class="fw-bold fs-4">$5.00</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mb-3 border-bottom border-secondary pb-3">
+                                <div>
+                                    <h5 class="mb-0">Safety Gear Kit</h5>
+                                    <p class="small opacity-50 mb-0">Helmet, wrist, knee, and elbow pads</p>
+                                </div>
+                                <span class="fw-bold fs-4">$3.00</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h5 class="mb-0">Skate Sharpening</h5>
+                                    <p class="small opacity-50 mb-0">For your personal ice skates</p>
+                                </div>
+                                <span class="fw-bold fs-4">$12.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container text-center">
+            <p class="opacity-50 mb-0">&copy; 2026 GlowGlide.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
