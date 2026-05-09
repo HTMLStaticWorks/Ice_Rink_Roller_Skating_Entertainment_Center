@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,10 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
     <!-- Open Graph -->
     <meta property="og:title" content="Service Details | GlowGlide">
     <meta property="og:description" content="Detailed information about our rinks and academy.">
@@ -21,6 +24,7 @@
     <link rel="stylesheet" href="assets/css/dark-mode.css">
     <link rel="stylesheet" href="assets/css/rtl.css">
 </head>
+
 <body>
 
     <!-- Header -->
@@ -39,11 +43,12 @@
                     <li><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
                 <div class="header-actions">
-                    <button id="theme-toggle" class="btn-icon" title="Toggle Theme"><i class="bi bi-moon-stars"></i></button>
-                    <button id="rtl-toggle" class="btn-icon" title="Toggle RTL"><i class="bi bi-translate"></i></button>
+                    <button id="theme-toggle" class="btn-icon" title="Toggle Theme"><i
+                            class="bi bi-moon-stars"></i></button>
+                    <button id="rtl-toggle" class="btn-icon" title="Toggle RTL">RTL</button>
                     <a href="login.html" class="btn-outline nav-desktop">Login</a>
                     <a href="contact.html" class="btn-primary nav-desktop">Book Now</a>
-                    
+
                     <div class="hamburger nav-mobile-toggle">
                         <span></span>
                         <span></span>
@@ -53,7 +58,7 @@
             </nav>
         </div>
     </header>
-    
+
     <!-- Offcanvas Mobile Menu -->
     <div class="offcanvas">
         <div class="offcanvas-header d-flex justify-content-between align-items-center mb-5">
@@ -75,10 +80,12 @@
     </div>
 
     <!-- Page Content -->
-    <section class="service-details-header" style="padding-top: 150px; background: linear-gradient(rgba(10,10,18,0.8), rgba(10,10,18,1)), url('https://images.unsplash.com/photo-1544253163-999335c6e864?q=80&w=2000&auto=format&fit=crop'); background-size: cover; background-position: center;">
+    <section class="service-details-header"
+        style="padding-top: 150px; background: var(--hero-overlay), url('assets/images/heroes/hero_ice.png'); background-size: cover; background-position: center;">
         <div class="container text-center">
             <h1 class="gradient-text mb-4">Crystal Ice Rink</h1>
-            <p class="opacity-75 fs-5 max-w-700 mx-auto">Experience the magic of gliding on pristine ice under cinematic lighting with state-of-the-art climate control.</p>
+            <p class="opacity-75 fs-5 max-w-700 mx-auto">Experience the magic of gliding on pristine ice under cinematic
+                lighting with state-of-the-art climate control.</p>
         </div>
     </section>
 
@@ -86,23 +93,28 @@
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-8">
-                    <img src="https://images.unsplash.com/photo-1517177326520-2977f64267d7?q=80&w=1200&auto=format&fit=crop" alt="Ice Rink" class="img-fluid rounded-4 mb-5 shadow">
-                    
+                    <img src="assets/images/others/ice_rink.png"
+                        alt="Ice Rink" class="img-fluid rounded-4 mb-5 shadow">
+
                     <h2 class="mb-4">Everything You Need to Know</h2>
-                    <p class="opacity-75 mb-4">Our Crystal Ice Rink is maintained to Olympic standards using advanced Zamboni technology. Whether you're a first-timer or a seasoned pro, the rink offers a perfect environment for all.</p>
-                    
+                    <p class="opacity-75 mb-4">Our Crystal Ice Rink is maintained to Olympic standards using advanced
+                        Zamboni technology. Whether you're a first-timer or a seasoned pro, the rink offers a perfect
+                        environment for all.</p>
+
                     <div class="row g-4 mb-5">
                         <div class="col-md-6">
                             <div class="custom-card border-primary">
                                 <h4 class="mb-3">Skate Rentals</h4>
-                                <p class="opacity-75 small">We offer premium skates from sizes Toddler 6 to Adult 14. All rentals are sanitized after every use.</p>
+                                <p class="opacity-75 small">We offer premium skates from sizes Toddler 6 to Adult 14.
+                                    All rentals are sanitized after every use.</p>
                                 <span class="text-primary fw-bold">$5.00 / Session</span>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="custom-card border-accent">
                                 <h4 class="mb-3">Safety Gear</h4>
-                                <p class="opacity-75 small">Helmets and knee pads are available for free for all children under 12. Highly recommended for beginners.</p>
+                                <p class="opacity-75 small">Helmets and knee pads are available for free for all
+                                    children under 12. Highly recommended for beginners.</p>
                                 <span class="text-accent fw-bold">FREE</span>
                             </div>
                         </div>
@@ -110,39 +122,45 @@
 
                     <h3 class="mb-4">Frequently Asked Questions</h3>
                     <div class="accordion accordion-flush bg-transparent" id="faqAccordion">
-                        <div class="accordion-item bg-transparent text-white border-secondary">
+                        <div class="accordion-item bg-transparent">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed bg-transparent text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                <button class="accordion-button collapsed bg-transparent" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq1">
                                     What is the minimum age for ice skating?
                                 </button>
                             </h2>
                             <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body opacity-75">
-                                    Children as young as 3 can start skating with our special double-blade skates and walker aids.
+                                    Children as young as 3 can start skating with our special double-blade skates and
+                                    walker aids.
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item bg-transparent text-white border-secondary">
+                        <div class="accordion-item bg-transparent">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed bg-transparent text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                <button class="accordion-button collapsed bg-transparent" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq2">
                                     Do I need to book in advance?
                                 </button>
                             </h2>
                             <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body opacity-75">
-                                    While walk-ins are welcome, we highly recommend booking online for weekend and glow sessions as they often reach capacity.
+                                    While walk-ins are welcome, we highly recommend booking online for weekend and glow
+                                    sessions as they often reach capacity.
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item bg-transparent text-white border-secondary">
+                        <div class="accordion-item bg-transparent">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed bg-transparent text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                <button class="accordion-button collapsed bg-transparent" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq3">
                                     Can I bring my own skates?
                                 </button>
                             </h2>
                             <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body opacity-75">
-                                    Yes! If you bring your own skates, you only pay the entry fee. We also offer professional skate sharpening services.
+                                    Yes! If you bring your own skates, you only pay the entry fee. We also offer
+                                    professional skate sharpening services.
                                 </div>
                             </div>
                         </div>
@@ -153,15 +171,15 @@
                     <div class="custom-card sticky-top" style="top: 100px;">
                         <h3 class="mb-4 text-center">Session Pricing</h3>
                         <div class="pricing-list">
-                            <div class="d-flex justify-content-between mb-3 border-bottom border-secondary pb-2">
+                            <div class="d-flex justify-content-between mb-3 border-bottom pb-2">
                                 <span>Adult Entry</span>
                                 <span class="fw-bold">$15.00</span>
                             </div>
-                            <div class="d-flex justify-content-between mb-3 border-bottom border-secondary pb-2">
+                            <div class="d-flex justify-content-between mb-3 border-bottom pb-2">
                                 <span>Child (Under 12)</span>
                                 <span class="fw-bold">$10.00</span>
                             </div>
-                            <div class="d-flex justify-content-between mb-3 border-bottom border-secondary pb-2">
+                            <div class="d-flex justify-content-between mb-3 border-bottom pb-2">
                                 <span>Senior (65+)</span>
                                 <span class="fw-bold">$12.00</span>
                             </div>
@@ -186,7 +204,8 @@
                     <a href="index.html" class="footer-logo d-block">
                         <img src="assets/images/logo.svg" alt="GlowGlide Logo" height="40">
                     </a>
-                    <p class="opacity-50 mt-4 mb-4">Elevating the skating experience with neon light and crystal ice.</p>
+                    <p class="opacity-50 mt-4 mb-4">Elevating the skating experience with neon light and crystal ice.
+                    </p>
                     <div class="social-links">
                         <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
                         <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
@@ -214,7 +233,8 @@
                     <h5 class="mb-4">Newsletter</h5>
                     <p class="opacity-50 mb-4">Get special offers and session updates.</p>
                     <div class="input-group">
-                        <input type="email" class="form-control bg-dark border-secondary text-white" placeholder="Email Address">
+                        <input type="email" class="form-control"
+                            placeholder="Email Address">
                         <button class="btn btn-primary"><i class="bi bi-send"></i></button>
                     </div>
                 </div>
@@ -233,4 +253,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>

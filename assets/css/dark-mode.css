@@ -1,17 +1,22 @@
 /* Dark Mode Overrides */
 [data-theme="dark"] {
-    --bg-dark: #0a0a12;
-    --bg-light: #ffffff;
-    --text-dark: #ffffff;
-    --text-light: #1a1a2e;
+    --bg-page: #0a0a12;
+    --bg-card: rgba(255, 255, 255, 0.05);
+    --bg-surface: #05050a;
+    --text-main: #ffffff;
+    --text-muted: rgba(255, 255, 255, 0.7);
+    --text-contrast: #1a1a2e;
+    
     --glass: rgba(255, 255, 255, 0.1);
     --glass-border: rgba(255, 255, 255, 0.2);
+    --hero-overlay: linear-gradient(rgba(10, 10, 18, 0.8), rgba(10, 10, 18, 0.95));
+    --hero-bg: #0a0a12;
 }
 
 /* Specific Dark Mode overrides if needed */
 [data-theme="dark"] body {
-    background-color: var(--bg-dark);
-    color: var(--text-dark);
+    background-color: var(--bg-page);
+    color: var(--text-main);
 }
 
 [data-theme="dark"] .custom-card {

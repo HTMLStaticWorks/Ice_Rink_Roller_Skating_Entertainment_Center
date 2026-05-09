@@ -14,62 +14,72 @@
     <link rel="stylesheet" href="assets/css/dark-mode.css">
     <link rel="stylesheet" href="assets/css/rtl.css">
     <style>
-        body {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: radial-gradient(circle at center, #1a1a2e 0%, #0a0a12 100%);
-        }
         .auth-card {
-            width: 100%;
             max-width: 500px;
-            padding: 3rem;
+            padding: 2.25rem;
         }
     </style>
 </head>
-<body>
+<body class="auth-page">
 
-    <div class="auth-card custom-card bg-black border-secondary shadow-lg">
-        <div class="text-center mb-5">
-            <a href="index.html"><img src="assets/images/logo.svg" alt="Logo" height="50"></a>
-            <h2 class="mt-4">Join the Glide</h2>
-            <p class="opacity-50">Create an account for faster bookings.</p>
+    <div class="floating-controls">
+        <button id="theme-toggle" class="btn-icon" title="Toggle Theme"><i class="bi bi-moon-stars"></i></button>
+        <button id="rtl-toggle" class="btn-icon" title="Toggle RTL">RTL</button>
+    </div>
+
+    <div class="auth-card custom-card shadow-lg">
+        <div class="text-center mb-4">
+            <a href="index.html"><img src="assets/images/logo.svg" alt="Logo" height="40"></a>
+            <h2 class="mt-3">Join the Glide</h2>
+            <p class="auth-subtext">Create an account for faster bookings.</p>
         </div>
 
         <form>
-            <div class="row g-3">
-                <div class="col-md-6 mb-3">
-                    <label class="form-label small opacity-75">First Name</label>
-                    <input type="text" class="form-control bg-dark border-secondary text-white p-3" required>
-                </div>
-                <div class="col-md-6 mb-3">
-                    <label class="form-label small opacity-75">Last Name</label>
-                    <input type="text" class="form-control bg-dark border-secondary text-white p-3" required>
-                </div>
+            <div class="mb-3">
+                <label class="form-label small">First Name</label>
+                <input type="text" class="form-control p-3" required>
             </div>
             <div class="mb-3">
-                <label class="form-label small opacity-75">Email Address</label>
-                <input type="email" class="form-control bg-dark border-secondary text-white p-3" placeholder="name@example.com" required>
+                <label class="form-label small">Last Name</label>
+                <input type="text" class="form-control p-3" required>
             </div>
             <div class="mb-3">
-                <label class="form-label small opacity-75">Password</label>
-                <input type="password" class="form-control bg-dark border-secondary text-white p-3" placeholder="••••••••" required>
+                <label class="form-label small">Email Address</label>
+                <input type="email" class="form-control p-3" placeholder="name@example.com" required>
             </div>
-            <div class="mb-4">
-                <label class="form-label small opacity-75">Confirm Password</label>
-                <input type="password" class="form-control bg-dark border-secondary text-white p-3" placeholder="••••••••" required>
+            <div class="mb-3">
+                <label class="form-label small">Password</label>
+                <input type="password" class="form-control p-3" placeholder="••••••••" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label small">Confirm Password</label>
+                <input type="password" class="form-control p-3" placeholder="••••••••" required>
             </div>
 
-            <div class="form-check mb-4">
-                <input class="form-check-input bg-dark border-secondary" type="checkbox" id="terms" required>
-                <label class="form-check-label small opacity-75" for="terms">I agree to the <a href="#" class="text-primary">Terms of Service</a> and <a href="#" class="text-primary">Privacy Policy</a></label>
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" id="terms" required>
+                <label class="form-check-label small" for="terms">I agree to the <a href="#" class="text-primary">Terms</a> & <a href="#" class="text-primary">Privacy</a></label>
             </div>
 
             <button type="submit" class="btn-primary w-100 p-3 mb-4">Create Account</button>
 
+            <div class="auth-divider">
+                <span>Or sign up with</span>
+            </div>
+
+            <div class="social-auth-buttons">
+                <button type="button" class="btn-social">
+                    <i class="bi bi-google"></i>
+                    Google
+                </button>
+                <button type="button" class="btn-social">
+                    <i class="bi bi-apple"></i>
+                    Apple
+                </button>
+            </div>
+
             <div class="text-center">
-                <p class="small opacity-50 mb-0">Already have an account? <a href="login.html" class="text-primary fw-bold">Sign In</a></p>
+                <p class="small auth-subtext mb-0">Already have an account? <a href="login.html" class="text-primary fw-bold">Sign In</a></p>
             </div>
         </form>
     </div>

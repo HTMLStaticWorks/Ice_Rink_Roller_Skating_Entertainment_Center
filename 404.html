@@ -20,7 +20,9 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            background: #0a0a12;
+            background: var(--hero-overlay), url('assets/images/heroes/hero_ice.png');
+            background-size: cover;
+            background-position: center;
         }
         .error-code {
             font-size: 150px;
@@ -28,6 +30,7 @@
             line-height: 1;
             background: linear-gradient(180deg, var(--primary), transparent);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
             margin-bottom: -20px;
         }
