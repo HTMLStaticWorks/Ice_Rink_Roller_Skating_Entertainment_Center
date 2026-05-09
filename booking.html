@@ -3,23 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | GlowGlide</title>
+    <title>Book a Session | GlowGlide</title>
+    <meta name="description" content="Reserve your spot on the ice or the roller floor at GlowGlide.">
     <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="About Us | GlowGlide">
-    <meta property="og:description" content="Discover the story behind GlowGlide Ice & Roller Entertainment Center.">
-    <link rel="canonical" href="https://glowglide.com/about.html">
-
-    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
-    
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/dark-mode.css">
     <link rel="stylesheet" href="assets/css/rtl.css">
@@ -36,7 +27,7 @@
                 <ul class="nav-menu nav-desktop">
                     <li><a href="index.html" class="nav-link">Home</a></li>
                     <li><a href="home-2.html" class="nav-link">Home 2</a></li>
-                    <li><a href="about.html" class="nav-link active">About</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
                     <li><a href="services.html" class="nav-link">Services</a></li>
                     <li><a href="blog.html" class="nav-link">Blog</a></li>
                     <li><a href="contact.html" class="nav-link">Contact</a></li>
@@ -65,7 +56,7 @@
         <ul class="mobile-nav">
             <li class="mb-4"><a href="index.html" class="fs-4">Home</a></li>
             <li class="mb-4"><a href="home-2.html" class="fs-4">Home 2</a></li>
-            <li class="mb-4"><a href="about.html" class="fs-4 active">About</a></li>
+            <li class="mb-4"><a href="about.html" class="fs-4">About</a></li>
             <li class="mb-4"><a href="services.html" class="fs-4">Services</a></li>
             <li class="mb-4"><a href="blog.html" class="fs-4">Blog</a></li>
             <li class="mb-4"><a href="contact.html" class="fs-4">Contact</a></li>
@@ -77,86 +68,60 @@
     </div>
 
     <!-- Page Title -->
-    <section class="hero-small text-center" style="padding-top: 150px; background: linear-gradient(to bottom, #0a0a12, #1a1a2e);">
+    <section class="hero-small text-center" style="padding-top: 150px;">
         <div class="container">
-            <h1 class="gradient-text">Our Story</h1>
-            <p class="opacity-75 fs-5">Blending tradition with high-tech entertainment since 2015.</p>
+            <h1 class="gradient-text">Reserve Your Spot</h1>
+            <p class="opacity-75 fs-5">Choose your vibe and lock in your session.</p>
         </div>
     </section>
 
-    <!-- About Content -->
-    <section class="about-detail">
+    <!-- Booking Form -->
+    <section class="booking-section">
         <div class="container">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-6">
-                    <div class="position-relative">
-                        <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?q=80&w=1000&auto=format&fit=crop" alt="History" class="img-fluid rounded-4 shadow">
-                        <div class="bg-primary p-4 rounded-4 position-absolute bottom-0 start-0 m-n3 d-none d-md-block" style="width: 200px;">
-                            <h2 class="text-black mb-0">10+</h2>
-                            <p class="text-black mb-0">Years of Experience</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <h2 class="mb-4">Where Ice Meets Neon</h2>
-                    <p class="opacity-75 mb-4">GlowGlide was born from a simple vision: to create a space where the classic joy of skating meets the futuristic energy of neon light and modern sound. What started as a local ice rink has evolved into a massive dual-rink entertainment complex.</p>
-                    <p class="opacity-75 mb-5">We pride ourselves on maintaining the highest quality rinks—from our crystal-clear Olympic-standard ice to our high-performance maple hardwood roller floors.</p>
-                    <div class="row g-4">
-                        <div class="col-md-6">
-                            <div class="d-flex align-items-center gap-3">
-                                <i class="bi bi-shield-check text-primary fs-2"></i>
-                                <div>
-                                    <h5 class="mb-0">Safety First</h5>
-                                    <p class="small opacity-50 mb-0">Certified instructors & gear.</p>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="custom-card animate-on-scroll">
+                        <form class="needs-validation" novalidate>
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <label class="form-label">Full Name</label>
+                                    <input type="text" class="form-control bg-dark border-secondary text-white" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Email Address</label>
+                                    <input type="email" class="form-control bg-dark border-secondary text-white" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Session Type</label>
+                                    <select class="form-select bg-dark border-secondary text-white" required>
+                                        <option value="">Select Session</option>
+                                        <option>Ice Skating</option>
+                                        <option>Roller Skating</option>
+                                        <option>Neon Glow Session</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Date</label>
+                                    <input type="date" class="form-control bg-dark border-secondary text-white" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Time Slot</label>
+                                    <select class="form-select bg-dark border-secondary text-white" required>
+                                        <option value="">Select Time</option>
+                                        <option>Morning (10:00 AM)</option>
+                                        <option>Afternoon (2:00 PM)</option>
+                                        <option>Evening (7:00 PM)</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Guests</label>
+                                    <input type="number" class="form-control bg-dark border-secondary text-white" min="1" value="1" required>
+                                </div>
+                                <div class="col-12 mt-5">
+                                    <button type="submit" class="btn-primary w-100">Confirm Booking</button>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="d-flex align-items-center gap-3">
-                                <i class="bi bi-people text-accent fs-2"></i>
-                                <div>
-                                    <h5 class="mb-0">Community</h5>
-                                    <p class="small opacity-50 mb-0">Inclusive & fun for all.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section class="team bg-black">
-        <div class="container">
-            <div class="section-title">
-                <h2>The Dream Team</h2>
-                <p class="opacity-75">Meet the professionals who keep the ice smooth and the wheels rolling.</p>
-            </div>
-            <div class="card-grid">
-                <div class="custom-card text-center">
-                    <img src="https://i.pravatar.cc/150?u=alex" alt="Team" class="rounded-circle mb-4 border border-primary p-1" width="100">
-                    <h4>Alex Thorne</h4>
-                    <p class="text-primary mb-3">Founder & CEO</p>
-                    <div class="social-links justify-content-center">
-                        <a href="#" class="small opacity-50"><i class="bi bi-linkedin"></i></a>
-                        <a href="#" class="small opacity-50"><i class="bi bi-twitter-x"></i></a>
-                    </div>
-                </div>
-                <div class="custom-card text-center">
-                    <img src="https://i.pravatar.cc/150?u=sarah" alt="Team" class="rounded-circle mb-4 border border-primary p-1" width="100">
-                    <h4>Sarah Jenkins</h4>
-                    <p class="text-primary mb-3">Head Coach - Ice</p>
-                    <div class="social-links justify-content-center">
-                        <a href="#" class="small opacity-50"><i class="bi bi-linkedin"></i></a>
-                    </div>
-                </div>
-                <div class="custom-card text-center">
-                    <img src="https://i.pravatar.cc/150?u=mike" alt="Team" class="rounded-circle mb-4 border border-primary p-1" width="100">
-                    <h4>Mike "Rolls" Davis</h4>
-                    <p class="text-primary mb-3">Event Director</p>
-                    <div class="social-links justify-content-center">
-                        <a href="#" class="small opacity-50"><i class="bi bi-instagram"></i></a>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -215,7 +180,6 @@
         <a href="#" class="back-to-top"><i class="bi bi-arrow-up"></i></a>
     </footer>
 
-    <!-- Bootstrap JS & Main JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
