@@ -40,17 +40,30 @@ document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.querySelector('.hamburger');
     const offcanvas = document.querySelector('.offcanvas');
     const closeMenu = document.querySelector('.close-menu');
+    const overlay = document.querySelector('.offcanvas-overlay');
 
-    if (hamburger && offcanvas) {
-        hamburger.addEventListener('click', () => {
+    const toggleMenu = (show) => {
+        if (show) {
             offcanvas.classList.add('active');
-        });
+            overlay?.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        } else {
+            offcanvas.classList.remove('active');
+            overlay?.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    };
+
+    if (hamburger) {
+        hamburger.addEventListener('click', () => toggleMenu(true));
     }
 
-    if (closeMenu && offcanvas) {
-        closeMenu.addEventListener('click', () => {
-            offcanvas.classList.remove('active');
-        });
+    if (closeMenu) {
+        closeMenu.addEventListener('click', () => toggleMenu(false));
+    }
+
+    if (overlay) {
+        overlay.addEventListener('click', () => toggleMenu(false));
     }
 
     // Sticky Header

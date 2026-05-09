@@ -212,6 +212,26 @@ nav {
     padding: 2rem;
     transition: 0.4s;
     border-left: 1px solid var(--glass-border);
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.offcanvas-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    z-index: 1090;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.offcanvas-overlay.active {
+    opacity: 1;
+    visibility: visible;
 }
 
 .mobile-nav a {
@@ -447,6 +467,24 @@ footer .opacity-50, footer .opacity-75 {
 
 .mb-4 { margin-bottom: 1.5rem; }
 .text-center { text-align: center; }
+
+/* Desktop Spacing Tweak */
+@media (min-width: 1101px) and (max-width: 1250px) {
+    .nav-menu {
+        gap: 1.25rem;
+    }
+    
+    .nav-link {
+        font-size: 13px;
+    }
+}
+
+/* Large Desktop Expansion */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
 
 /* 1100px Breakpoint Custom */
 @media (max-width: 1100px) {
