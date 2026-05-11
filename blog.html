@@ -60,27 +60,27 @@
     </header>
 
     <!-- Offcanvas Mobile Menu -->
-    <div class="offcanvas">
-        <div class="offcanvas-header d-flex justify-content-between align-items-center mb-5">
-            <img src="assets/images/logo.svg" alt="Logo" height="30">
+    <div class="mobile-offcanvas">
+        <div class="offcanvas-header d-flex justify-content-between align-items-center mb-3">
             <i class="bi bi-x-lg close-menu fs-3 cursor-pointer"></i>
         </div>
         <ul class="mobile-nav">
-            <li class="mb-4"><a href="index.html" class="fs-4">Home</a></li>
-            <li class="mb-4"><a href="home-2.html" class="fs-4">Home 2</a></li>
-            <li class="mb-4"><a href="about.html" class="fs-4">About</a></li>
-            <li class="mb-4"><a href="services.html" class="fs-4">Services</a></li>
-            <li class="mb-4"><a href="blog.html" class="fs-4 active">Blog</a></li>
-            <li class="mb-4"><a href="contact.html" class="fs-4">Contact</a></li>
+            <li><a href="index.html" class="fs-4">Home</a></li>
+            <li><a href="home-2.html" class="fs-4">Home 2</a></li>
+            <li><a href="about.html" class="fs-4">About</a></li>
+            <li><a href="services.html" class="fs-4">Services</a></li>
+            <li><a href="blog.html" class="fs-4 active">Blog</a></li>
+            <li><a href="contact.html" class="fs-4">Contact</a></li>
         </ul>
-        <div class="mt-5">
+        <div class="mt-3">
             <a href="login.html" class="btn-outline w-100 d-block text-center mb-3">Login</a>
             <a href="contact.html" class="btn-primary w-100 d-block text-center">Book Now</a>
         </div>
     </div>
-    <div class="offcanvas-overlay"></div>
+    <div class="mobile-offcanvas-overlay"></div>
 
-    <section class="blog-hero" style="padding-top: 150px; background: var(--hero-overlay), url('assets/images/heroes/hero_blog.png'); background-size: cover; background-position: center;">
+    <section class="blog-hero"
+        style="padding-top: 150px; background: var(--hero-overlay), url('assets/images/heroes/hero_blog.png'); background-size: cover; background-position: center;">
         <div class="container text-center">
             <h1 class="gradient-text mb-3">The Glide Blog</h1>
             <p class="opacity-75 fs-5">Tips, news, and skating culture.</p>
@@ -93,14 +93,12 @@
             <div class="row align-items-center g-3">
                 <div class="col-md-4">
                     <div class="input-group">
-                        <span class="input-group-text bg-transparent"><i
-                                class="bi bi-search"></i></span>
-                        <input type="text" class="form-control bg-transparent"
-                            placeholder="Search articles...">
+                        <span class="input-group-text bg-transparent"><i class="bi bi-search"></i></span>
+                        <input type="text" class="form-control bg-transparent" placeholder="Search articles...">
                     </div>
                 </div>
                 <div class="col-md-8">
-                    <div class="d-flex gap-2 justify-content-md-end overflow-auto pb-2 pb-md-0">
+                    <div class="d-flex flex-wrap gap-2 justify-content-md-end pb-2 pb-md-0">
                         <button class="btn btn-outline-secondary btn-sm rounded-pill active">All</button>
                         <button class="btn btn-outline-secondary btn-sm rounded-pill">Ice Skating</button>
                         <button class="btn btn-outline-secondary btn-sm rounded-pill">Roller Skating</button>
@@ -122,11 +120,12 @@
                         <div class="play-btn"><i class="bi bi-play-fill"></i></div>
                     </div>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-5 text-center text-lg-start">
                     <span class="text-primary fw-bold text-uppercase mb-2 d-block">Watch Now</span>
                     <h2>The Glow Report: Episode 12</h2>
-                    <p class="opacity-75 mb-4">Go behind the scenes of our latest Neon Night event. See how our DJs prep the beats and our ice technicians create the perfect glide.</p>
-                    <div class="d-flex align-items-center gap-3 mb-4">
+                    <p class="opacity-75 mb-4">Go behind the scenes of our latest Neon Night event. See how our DJs prep
+                        the beats and our ice technicians create the perfect glide.</p>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start gap-3 mb-4">
                         <img src="assets/images/others/team_alex.png" alt="Host" class="rounded-circle" width="50">
                         <div>
                             <h6 class="mb-0">Hosted by Alex Thorne</h6>
@@ -146,16 +145,19 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <h2 class="mb-3">Join the <span class="text-primary">Glow Crew</span></h2>
-                        <p class="opacity-75 mb-5">Get exclusive early access to event tickets, member-only discounts, and the latest skating tips delivered straight to your inbox.</p>
+                        <p class="opacity-75 mb-5">Get exclusive early access to event tickets, member-only discounts,
+                            and the latest skating tips delivered straight to your inbox.</p>
                         <form class="row g-3 justify-content-center">
                             <div class="col-md-8">
-                                <input type="email" class="form-control p-3 bg-transparent" placeholder="Enter your email address">
+                                <input type="email" class="form-control p-3 bg-transparent"
+                                    placeholder="Enter your email address">
                             </div>
                             <div class="col-md-4">
                                 <button type="submit" class="btn-primary w-100 p-3">Sign Me Up</button>
                             </div>
                         </form>
-                        <p class="small opacity-50 mt-4 mb-0">No spam, just pure skating energy. Unsubscribe anytime.</p>
+                        <p class="small opacity-50 mt-4 mb-0">No spam, just pure skating energy. Unsubscribe anytime.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -165,12 +167,11 @@
     <!-- Blog Posts -->
     <section class="blog-posts py-5">
         <div class="container">
-            <div class="row g-4">
+            <div class="row g-4 justify-content-center">
                 <!-- Post 1 -->
                 <div class="col-lg-4 col-md-6">
                     <div class="custom-card h-100 p-0 overflow-hidden">
-                        <img src="assets/images/others/ice_rink.png"
-                            alt="Post" class="img-fluid">
+                        <img src="assets/images/others/ice_rink.png" alt="Post" class="img-fluid">
                         <div class="p-4">
                             <div class="d-flex justify-content-between small opacity-50 mb-3">
                                 <span>May 10, 2026</span>
@@ -187,8 +188,7 @@
                 <!-- Post 2 -->
                 <div class="col-lg-4 col-md-6">
                     <div class="custom-card h-100 p-0 overflow-hidden border-accent">
-                        <img src="assets/images/others/roller_rink.png"
-                            alt="Post" class="img-fluid">
+                        <img src="assets/images/others/roller_rink.png" alt="Post" class="img-fluid">
                         <div class="p-4">
                             <div class="d-flex justify-content-between small opacity-50 mb-3">
                                 <span>May 05, 2026</span>
@@ -205,8 +205,7 @@
                 <!-- Post 3 -->
                 <div class="col-lg-4 col-md-6">
                     <div class="custom-card h-100 p-0 overflow-hidden">
-                        <img src="assets/images/others/arcade.png"
-                            alt="Post" class="img-fluid">
+                        <img src="assets/images/others/arcade.png" alt="Post" class="img-fluid">
                         <div class="p-4">
                             <div class="d-flex justify-content-between small opacity-50 mb-3">
                                 <span>April 28, 2026</span>
@@ -223,11 +222,11 @@
             </div>
 
             <!-- Pagination -->
-            <nav class="mt-5">
-                <ul class="pagination justify-content-center">
+            <nav class="mt-5 d-flex justify-content-center">
+                <ul class="pagination">
                     <li class="page-item disabled"><a class="page-link" href="#">Previous</a>
                     </li>
-                    <li class="page-item active"><a class="page-link bg-primary border-primary text-black"
+                    <li class="page-item active"><a class="page-link"
                             href="#">1</a></li>
                     <li class="page-item"><a class="page-link" href="#">2</a></li>
                     <li class="page-item"><a class="page-link" href="#">Next</a>
@@ -241,14 +240,14 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-grid">
+            <div class="footer-grid text-center text-lg-start">
                 <div>
                     <a href="index.html" class="footer-logo d-block">
                         <img src="assets/images/logo.svg" alt="GlowGlide Logo" height="40">
                     </a>
                     <p class="opacity-50 mt-4 mb-4">Elevating the skating experience with neon light and crystal ice.
                     </p>
-                    <div class="social-links">
+                    <div class="social-links justify-content-center justify-content-lg-start">
                         <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
                         <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
                         <a href="#" class="social-icon"><i class="bi bi-tiktok"></i></a>
@@ -274,9 +273,8 @@
                 <div>
                     <h5 class="mb-4">Newsletter</h5>
                     <p class="opacity-50 mb-4">Get special offers and session updates.</p>
-                    <div class="input-group">
-                        <input type="email" class="form-control"
-                            placeholder="Email Address">
+                    <div class="input-group mx-auto ms-lg-0" style="max-width: 400px;">
+                        <input type="email" class="form-control" placeholder="Email Address">
                         <button class="btn btn-primary"><i class="bi bi-send"></i></button>
                     </div>
                 </div>

@@ -60,20 +60,19 @@
     </header>
 
     <!-- Offcanvas Mobile Menu -->
-    <div class="offcanvas">
-        <div class="offcanvas-header d-flex justify-content-between align-items-center mb-5">
-            <img src="assets/images/logo.svg" alt="Logo" height="30">
+    <div class="mobile-offcanvas">
+        <div class="offcanvas-header d-flex justify-content-between align-items-center mb-3">
             <i class="bi bi-x-lg close-menu fs-3 cursor-pointer"></i>
         </div>
         <ul class="mobile-nav">
-            <li class="mb-4"><a href="index.html" class="fs-4">Home</a></li>
-            <li class="mb-4"><a href="home-2.html" class="fs-4 active">Home 2</a></li>
-            <li class="mb-4"><a href="about.html" class="fs-4">About</a></li>
-            <li class="mb-4"><a href="services.html" class="fs-4">Services</a></li>
-            <li class="mb-4"><a href="blog.html" class="fs-4">Blog</a></li>
-            <li class="mb-4"><a href="contact.html" class="fs-4">Contact</a></li>
+            <li><a href="index.html" class="fs-4">Home</a></li>
+            <li><a href="home-2.html" class="fs-4 active">Home 2</a></li>
+            <li><a href="about.html" class="fs-4">About</a></li>
+            <li><a href="services.html" class="fs-4">Services</a></li>
+            <li><a href="blog.html" class="fs-4">Blog</a></li>
+            <li><a href="contact.html" class="fs-4">Contact</a></li>
         </ul>
-        <div class="mt-5">
+        <div class="mt-3">
             <a href="login.html" class="btn-outline w-100 d-block text-center mb-3">Login</a>
             <a href="contact.html" class="btn-primary w-100 d-block text-center">Book Now</a>
         </div>
@@ -81,16 +80,15 @@
 
     <!-- Alternative Hero (Video Style) -->
     <section class="hero-2"
-        style="min-height: 90vh; display: flex; align-items: center; background: var(--hero-overlay), url('assets/images/heroes/hero_roller.png'); background-size: cover; background-position: center; padding: 120px 0 80px;">
+        style="min-height: 100vh; display: flex; align-items: center; background-image: url('assets/images/heroes/hero_roller.png'); background-size: cover; background-position: center; padding: 160px 0 100px;">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-7">
-                    <span class="badge bg-primary text-black mb-3 px-3 py-2">NEW SEASON OPEN</span>
-                    <h1 class="display-3 fw-800 mb-4">Host the Most <span
-                            class="gradient-text">Radiant</span> Event of the Year</h1>
-                    <p class="fs-4 opacity-75 mb-5">From corporate team building to the ultimate birthday
+            <div class="row justify-content-center">
+                <div class="col-lg-11 text-center">
+                    <span class="badge bg-primary text-black mb-4 px-3 py-2">NEW SEASON OPEN</span>
+                    <h1 class="gradient-text mb-4">Host the Most Radiant Event of the Year</h1>
+                    <p class="fs-5 opacity-75 mb-5 mx-auto" style="max-width: 800px;">From corporate team building to the ultimate birthday
                         bash, GlowGlide offers a venue like no other.</p>
-                    <div class="d-flex gap-3">
+                    <div class="d-flex btn-group-responsive gap-3 justify-content-center">
                         <a href="contact.html" class="btn-primary btn-lg px-5">Book Your Date</a>
                         <a href="services.html" class="btn-outline btn-lg px-5">View Packages</a>
                     </div>
@@ -124,19 +122,21 @@
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6 order-lg-2">
-                    <img src="assets/images/others/ice_rink.png"
-                        alt="Ice Rink" class="img-fluid rounded-4 shadow-lg border border-primary">
+                    <img src="assets/images/others/ice_rink.png" alt="Ice Rink"
+                        class="img-fluid rounded-4 shadow-lg border border-primary mx-auto d-block">
                 </div>
-                <div class="col-lg-6 order-lg-1">
+                <div class="col-lg-6 order-lg-1 text-center text-xl-start">
                     <h2 class="mb-4">The Crystal Experience</h2>
                     <p class="opacity-75 fs-5 mb-4">Our signature ice rink features a high-fidelity sound system and
                         overhead kinetic lighting that reacts to the music and your movement.</p>
-                    <ul class="list-unstyled mb-5">
-                        <li class="mb-3"><i class="bi bi-check-lg text-primary me-2"></i> Professional Grade Ice Surface
-                        </li>
-                        <li class="mb-3"><i class="bi bi-check-lg text-primary me-2"></i> Dynamic Laser Light Shows</li>
-                        <li class="mb-3"><i class="bi bi-check-lg text-primary me-2"></i> VIP Lounge Access</li>
-                    </ul>
+                    <div class="d-flex justify-content-center justify-content-xl-start">
+                        <ul class="list-unstyled mb-5 text-start">
+                            <li class="mb-3"><i class="bi bi-check-lg text-primary me-2"></i> Professional Grade Ice Surface
+                            </li>
+                            <li class="mb-3"><i class="bi bi-check-lg text-primary me-2"></i> Dynamic Laser Light Shows</li>
+                            <li class="mb-3"><i class="bi bi-check-lg text-primary me-2"></i> VIP Lounge Access</li>
+                        </ul>
+                    </div>
                     <a href="service-details.html" class="btn-primary">Explore Features</a>
                 </div>
             </div>
@@ -147,89 +147,107 @@
     <section class="corporate py-5 animate-on-scroll" style="background: var(--bg-surface);">
         <div class="container">
             <div class="row g-5 align-items-center">
-                <div class="col-lg-6">
+                <div class="col-lg-6 text-center text-xl-start">
                     <span class="text-primary fw-bold text-uppercase mb-2 d-block">Professional Fun</span>
                     <h2>Corporate & Team Building</h2>
-                    <p class="opacity-75 mb-4">Break the ice (literally) with our custom corporate packages. Perfect for team bonding, company milestones, and networking events with a neon twist.</p>
-                    <ul class="list-unstyled mb-5">
-                        <li class="mb-3"><i class="bi bi-briefcase text-primary me-2"></i> Custom Event Planning</li>
-                        <li class="mb-3"><i class="bi bi-people text-primary me-2"></i> Dedicated Event Coordinator</li>
-                        <li class="mb-3"><i class="bi bi-gift text-primary me-2"></i> Branded Merchandise Options</li>
-                    </ul>
+                    <p class="opacity-75 mb-4">Break the ice (literally) with our custom corporate packages. Perfect for
+                        team bonding, company milestones, and networking events with a neon twist.</p>
+                    <div class="d-flex justify-content-center justify-content-xl-start">
+                        <ul class="list-unstyled mb-5 text-start">
+                            <li class="mb-3"><i class="bi bi-briefcase text-primary me-2"></i> Custom Event Planning</li>
+                            <li class="mb-3"><i class="bi bi-people text-primary me-2"></i> Dedicated Event Coordinator</li>
+                            <li class="mb-3"><i class="bi bi-gift text-primary me-2"></i> Branded Merchandise Options</li>
+                        </ul>
+                    </div>
                     <a href="contact.html" class="btn-outline">Download Event PDF</a>
                 </div>
                 <div class="col-lg-6">
                     <div class="custom-card p-0 overflow-hidden border-0 shadow-lg">
-                        <img src="assets/images/heroes/hero_contact.png" alt="Corporate Event" class="img-fluid">
+                        <img src="assets/images/heroes/hero_contact.png" alt="Corporate Event" class="img-fluid mx-auto d-block">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Membership Perks Section -->
-    <section class="membership py-5 animate-on-scroll">
+    <!-- Rink Pulse Dashboard Section -->
+    <section class="rink-pulse animate-on-scroll">
         <div class="container">
-            <div class="section-title">
-                <span class="text-accent fw-bold text-uppercase mb-2 d-block">Join the Elite</span>
-                <h2>Membership & VIP Perks</h2>
-                <p class="opacity-75">Unlock exclusive access and savings with our membership tiers.</p>
+            <div class="section-title text-center mb-5">
+                <span class="text-primary fw-bold text-uppercase mb-2 d-block" style="letter-spacing: 3px;">The Rink Pulse</span>
+                <h2 class="display-4 fw-800">Real-Time Atmosphere</h2>
+                <p class="opacity-75 text-white-50 mx-auto" style="max-width: 600px;">Our smart-rink technology constantly monitors and adjusts the environment for the ultimate skating experience.</p>
             </div>
-            
+
             <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="custom-card text-center h-100">
-                        <h4 class="mb-3">Silver Glide</h4>
-                        <div class="fs-1 fw-bold mb-3 text-primary">$29<span class="fs-6 opacity-50">/mo</span></div>
-                        <ul class="list-unstyled opacity-75 mb-4">
-                            <li>2 Free Sessions / Month</li>
-                            <li>10% Off Rentals</li>
-                            <li>Standard Entry</li>
-                        </ul>
-                        <a href="login.html" class="btn-outline w-100">Select Plan</a>
+                <!-- Ice Precision -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="pulse-card">
+                        <div class="live-indicator"><span class="pulse-dot"></span> Live</div>
+                        <div class="icon-box"><i class="bi bi-snow"></i></div>
+                        <div class="metric-value">-4.2°C</div>
+                        <div class="metric-label">Ice Precision</div>
+                        <div class="metric-subtext">Optimal Friction Ratio</div>
+                        <div class="progress-mini"><div class="progress-mini-bar" style="width: 95%;"></div></div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="custom-card text-center h-100 border-primary" style="transform: scale(1.05);">
-                        <div class="badge bg-primary text-black mb-3">MOST POPULAR</div>
-                        <h4 class="mb-3">Neon Gold</h4>
-                        <div class="fs-1 fw-bold mb-3 text-primary">$49<span class="fs-6 opacity-50">/mo</span></div>
-                        <ul class="list-unstyled opacity-75 mb-4">
-                            <li>Unlimited Sessions</li>
-                            <li>Free Rentals</li>
-                            <li>Guest Pass (1/mo)</li>
-                        </ul>
-                        <a href="login.html" class="btn-primary w-100">Go Gold</a>
+
+                <!-- Audio Flow -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="pulse-card">
+                        <div class="live-indicator"><span class="pulse-dot"></span> Live</div>
+                        <div class="icon-box"><i class="bi bi-music-note-beamed"></i></div>
+                        <div class="metric-value">128 BPM</div>
+                        <div class="metric-label">Audio Flow</div>
+                        <div class="metric-subtext">Genre: Electro-Swing</div>
+                        <div class="progress-mini"><div class="progress-mini-bar" style="width: 82%;"></div></div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="custom-card text-center h-100">
-                        <h4 class="mb-3">Platinum VIP</h4>
-                        <div class="fs-1 fw-bold mb-3 text-primary">$99<span class="fs-6 opacity-50">/mo</span></div>
-                        <ul class="list-unstyled opacity-75 mb-4">
-                            <li>All Gold Perks</li>
-                            <li>VIP Lounge Access</li>
-                            <li>Priority Booking</li>
-                        </ul>
-                        <a href="login.html" class="btn-outline w-100">Select Plan</a>
+
+                <!-- Visual Aura -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="pulse-card">
+                        <div class="live-indicator"><span class="pulse-dot"></span> Live</div>
+                        <div class="icon-box"><i class="bi bi-palette"></i></div>
+                        <div class="metric-value">Neon</div>
+                        <div class="metric-label">Visual Aura</div>
+                        <div class="metric-subtext">Mode: Kinetic Pulse</div>
+                        <div class="progress-mini"><div class="progress-mini-bar" style="width: 100%;"></div></div>
+                    </div>
+                </div>
+
+                <!-- Live Density -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="pulse-card">
+                        <div class="live-indicator"><span class="pulse-dot"></span> Live</div>
+                        <div class="icon-box"><i class="bi bi-people"></i></div>
+                        <div class="metric-value">68%</div>
+                        <div class="metric-label">Live Density</div>
+                        <div class="metric-subtext">Ideal Vibe Level</div>
+                        <div class="progress-mini"><div class="progress-mini-bar" style="width: 68%;"></div></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
 
     <!-- Testimonials Section -->
-    <section class="testimonials py-5 animate-on-scroll" style="background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url('assets/images/heroes/hero_main.png'); background-size: cover; background-position: center; color: white;">
+    <section class="testimonials py-5 animate-on-scroll"
+        style="background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url('assets/images/heroes/hero_main.png'); background-size: cover; background-position: center; color: white;">
         <div class="container py-5 text-center">
             <i class="bi bi-quote fs-1 text-primary mb-4 d-block"></i>
             <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <p class="fs-3 fw-light mb-4">"The best skating experience I've ever had. The lights and music create an atmosphere that is simply electric!"</p>
+                        <p class="fs-3 fw-light mb-4">"The best skating experience I've ever had. The lights and music
+                            create an atmosphere that is simply electric!"</p>
                         <h5 class="text-primary">- Jessica M., Professional Skater</h5>
                     </div>
                     <div class="carousel-item">
-                        <p class="fs-3 fw-light mb-4">"My kids had the time of their lives at the birthday party. Everything was so well organized and the staff were amazing."</p>
+                        <p class="fs-3 fw-light mb-4">"My kids had the time of their lives at the birthday party.
+                            Everything was so well organized and the staff were amazing."</p>
                         <h5 class="text-primary">- David L., Happy Parent</h5>
                     </div>
                 </div>
@@ -240,14 +258,14 @@
     <!-- Blog Feed Section -->
     <section class="blog-feed py-5 animate-on-scroll">
         <div class="container">
-            <div class="d-flex justify-content-between align-items-end mb-5">
-                <div>
+            <div class="w-100 d-flex flex-column flex-xl-row justify-content-between align-items-center align-items-xl-end text-center text-xl-start gap-4 mb-5">
+                <div class="text-center text-xl-start">
                     <span class="text-primary fw-bold text-uppercase mb-2 d-block">Insights</span>
                     <h2 class="mb-0">Latest from the Rink</h2>
                 </div>
-                <a href="blog.html" class="btn-outline">View All Posts</a>
+                <a href="blog.html" class="btn-outline mx-auto mx-xl-0">View All Posts</a>
             </div>
-            
+
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="custom-card p-0 overflow-hidden h-100">
@@ -255,7 +273,8 @@
                         <div class="p-4">
                             <span class="small text-primary mb-2 d-block">May 10, 2026</span>
                             <h5>5 Tips for Better Balance on Ice</h5>
-                            <a href="blog-details.html" class="text-accent small fw-bold">Read More <i class="bi bi-arrow-right"></i></a>
+                            <a href="blog-details.html" class="text-accent small fw-bold">Read More <i
+                                    class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -265,7 +284,8 @@
                         <div class="p-4">
                             <span class="small text-primary mb-2 d-block">May 08, 2026</span>
                             <h5>Choosing the Right Roller Wheels</h5>
-                            <a href="blog-details.html" class="text-accent small fw-bold">Read More <i class="bi bi-arrow-right"></i></a>
+                            <a href="blog-details.html" class="text-accent small fw-bold">Read More <i
+                                    class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -275,7 +295,8 @@
                         <div class="p-4">
                             <span class="small text-primary mb-2 d-block">May 05, 2026</span>
                             <h5>Meet Our New Lead Instructor</h5>
-                            <a href="blog-details.html" class="text-accent small fw-bold">Read More <i class="bi bi-arrow-right"></i></a>
+                            <a href="blog-details.html" class="text-accent small fw-bold">Read More <i
+                                    class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -293,7 +314,8 @@
             <div class="row g-0">
                 <div class="col-6 col-md-4 col-lg-2">
                     <div class="gallery-item position-relative overflow-hidden" style="aspect-ratio: 1/1;">
-                        <img src="assets/images/others/team_sarah.png" alt="Social" class="w-100 h-100 object-fit-cover">
+                        <img src="assets/images/others/team_sarah.png" alt="Social"
+                            class="w-100 h-100 object-fit-cover">
                         <div class="gallery-overlay"><i class="bi bi-instagram fs-3 text-white"></i></div>
                     </div>
                 </div>
@@ -305,7 +327,8 @@
                 </div>
                 <div class="col-6 col-md-4 col-lg-2">
                     <div class="gallery-item position-relative overflow-hidden" style="aspect-ratio: 1/1;">
-                        <img src="assets/images/others/roller_rink.png" alt="Social" class="w-100 h-100 object-fit-cover">
+                        <img src="assets/images/others/roller_rink.png" alt="Social"
+                            class="w-100 h-100 object-fit-cover">
                         <div class="gallery-overlay"><i class="bi bi-instagram fs-3 text-white"></i></div>
                     </div>
                 </div>
@@ -369,8 +392,7 @@
                     <h5 class="mb-4">Newsletter</h5>
                     <p class="opacity-50 mb-4">Get special offers and session updates.</p>
                     <div class="input-group">
-                        <input type="email" class="form-control"
-                            placeholder="Email Address">
+                        <input type="email" class="form-control" placeholder="Email Address">
                         <button class="btn btn-primary"><i class="bi bi-send"></i></button>
                     </div>
                 </div>

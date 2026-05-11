@@ -38,9 +38,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Mobile Menu
     const hamburger = document.querySelector('.hamburger');
-    const offcanvas = document.querySelector('.offcanvas');
+    const offcanvas = document.querySelector('.mobile-offcanvas');
     const closeMenu = document.querySelector('.close-menu');
-    const overlay = document.querySelector('.offcanvas-overlay');
+    const overlay = document.querySelector('.mobile-offcanvas-overlay');
 
     const toggleMenu = (show) => {
         if (show) {
@@ -170,4 +170,21 @@ document.addEventListener('DOMContentLoaded', () => {
         updateOccupancy();
         setInterval(updateOccupancy, 5000);
     }
+
+    // Password Visibility Toggle
+    const passwordToggles = document.querySelectorAll('.password-toggle');
+    passwordToggles.forEach(toggle => {
+        toggle.addEventListener('click', function() {
+            const input = this.parentElement.querySelector('input');
+            const icon = this.querySelector('i');
+            
+            if (input.type === 'password') {
+                input.type = 'text';
+                icon.classList.replace('bi-eye', 'bi-eye-slash');
+            } else {
+                input.type = 'password';
+                icon.classList.replace('bi-eye-slash', 'bi-eye');
+            }
+        });
+    });
 });

@@ -49,11 +49,25 @@
             </div>
             <div class="mb-3">
                 <label class="form-label small">Password</label>
-                <input type="password" class="form-control p-3" placeholder="••••••••" required>
+                <div class="input-group">
+                    <span class="input-group-text border-end-0"><i class="bi bi-lock"></i></span>
+                    <input type="password" class="form-control border-start-0 border-end-0 p-3" 
+                        placeholder="••••••••" required id="password">
+                    <button class="input-group-text password-toggle" type="button">
+                        <i class="bi bi-eye"></i>
+                    </button>
+                </div>
             </div>
             <div class="mb-3">
                 <label class="form-label small">Confirm Password</label>
-                <input type="password" class="form-control p-3" placeholder="••••••••" required>
+                <div class="input-group">
+                    <span class="input-group-text border-end-0"><i class="bi bi-shield-lock"></i></span>
+                    <input type="password" class="form-control border-start-0 border-end-0 p-3" 
+                        placeholder="••••••••" required id="confirmPassword">
+                    <button class="input-group-text password-toggle" type="button">
+                        <i class="bi bi-eye"></i>
+                    </button>
+                </div>
             </div>
 
             <div class="form-check mb-3">
