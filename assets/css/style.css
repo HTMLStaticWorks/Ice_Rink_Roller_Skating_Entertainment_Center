@@ -28,6 +28,19 @@
     --small: 14px;
 }
 
+/* Utility Classes for Brand Colors */
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.text-secondary {
+    color: var(--secondary) !important;
+}
+
+.text-accent {
+    color: var(--accent) !important;
+}
+
 body {
     font-family: var(--font-body);
     background-color: var(--bg-page);
