@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 } else if (percentage > 60) {
                     dot.style.background = '#f9d423'; // Moderate
                 } else {
-                    dot.style.background = '#00f2ff'; // Quiet
+                    dot.style.background = '#0284c7'; // Quiet
                 }
             }
         };

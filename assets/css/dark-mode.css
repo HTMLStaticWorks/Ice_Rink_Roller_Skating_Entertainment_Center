@@ -1,16 +1,16 @@
 /* Dark Mode Overrides */
 [data-theme="dark"] {
-    --bg-page: #0a0a12;
-    --bg-card: rgba(255, 255, 255, 0.05);
-    --bg-surface: #05050a;
+    --bg-page: #0b0f19;
+    --bg-card: rgba(255, 255, 255, 0.03);
+    --bg-surface: #06080d;
     --text-main: #ffffff;
     --text-muted: rgba(255, 255, 255, 0.7);
-    --text-contrast: #1a1a2e;
+    --text-contrast: #0b0f19;
     
-    --glass: rgba(255, 255, 255, 0.1);
-    --glass-border: rgba(255, 255, 255, 0.2);
-    --hero-overlay: linear-gradient(rgba(10, 10, 18, 0.5), rgba(10, 10, 18, 0.8));
-    --hero-bg: #0a0a12;
+    --glass: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.12);
+    --hero-overlay: linear-gradient(rgba(11, 15, 25, 0.6), rgba(11, 15, 25, 0.8));
+    --hero-bg: #0b0f19;
 }
 
 /* Specific Dark Mode overrides if needed */

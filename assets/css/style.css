@@ -1,22 +1,22 @@
 :root {
     /* Color Palette */
-    --primary: #00f2ff;
-    --secondary: #7000ff;
-    --accent: #ff00ff;
+    --primary: #0284c7;
+    --secondary: #0f172a;
+    --accent: #0d9488;
     
     /* Theme Variables (Default/Light) */
-    --bg-page: #ffffff;
-    --bg-card: rgba(0, 0, 0, 0.05);
-    --bg-surface: #f8f9fa;
-    --text-main: #1a1a2e;
-    --text-muted: rgba(26, 26, 46, 0.7);
+    --bg-page: #f8fafc;
+    --bg-card: rgba(15, 23, 42, 0.04);
+    --bg-surface: #f1f5f9;
+    --text-main: #0f172a;
+    --text-muted: rgba(15, 23, 42, 0.7);
     --text-contrast: #ffffff;
     
-    --glass: rgba(0, 0, 0, 0.08);
-    --glass-border: rgba(0, 0, 0, 0.15);
-    --neon-shadow: 0 0 10px rgba(0, 242, 255, 0.5);
-    --hero-overlay: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
-    --hero-bg: #f0f2f5;
+    --glass: rgba(15, 23, 42, 0.03);
+    --glass-border: rgba(15, 23, 42, 0.08);
+    --neon-shadow: 0 4px 12px rgba(2, 132, 199, 0.15);
+    --hero-overlay: linear-gradient(rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.6));
+    --hero-bg: #e2e8f0;
     
     /* Typography */
     --font-heading: 'Poppins', sans-serif;
@@ -88,7 +88,7 @@ header {
 header.scrolled {
     padding: 0.8rem 0;
     background: var(--bg-page);
-    border-bottom-color: var(--primary);
+    border-bottom-color: var(--glass-border);
 }
 
 header a, header button, header i {
@@ -169,18 +169,18 @@ nav {
 
 .btn-icon:hover {
     background: var(--primary);
-    color: #000;
+    color: #fff;
 }
 
 .btn-primary {
     background: var(--primary);
-    color: #000;
+    color: #fff;
     padding: 0.8rem 2rem;
     border-radius: 50px;
     font-weight: 600;
     border: none;
     cursor: pointer;
-    box-shadow: var(--neon-shadow);
+    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.2);
     transition: all 0.3s ease;
     display: inline-block;
 }
@@ -189,7 +189,7 @@ nav {
     background: var(--accent);
     color: #fff;
     transform: translateY(-3px);
-    box-shadow: 0 5px 20px rgba(255, 0, 255, 0.5);
+    box-shadow: 0 6px 20px rgba(13, 148, 136, 0.3);
 }
 
 .btn-outline {
@@ -207,9 +207,9 @@ nav {
 
 .btn-outline:hover {
     background: var(--primary);
-    color: #000;
+    color: #fff;
     transform: translateY(-3px);
-    box-shadow: var(--neon-shadow);
+    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.2);
 }
 
 /* Responsive Menu */
@@ -283,7 +283,7 @@ nav {
 
 .mobile-nav a.active {
     color: var(--primary) !important;
-    background: rgba(0, 242, 255, 0.05);
+    background: rgba(2, 132, 199, 0.05);
     border-left-color: var(--primary);
     padding-left: 1.5rem;
     font-weight: 600;
@@ -390,11 +390,10 @@ h1 {
 }
 
 .gradient-text {
-    background: linear-gradient(90deg, var(--primary), var(--accent));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    filter: drop-shadow(0 2px 15px rgba(0, 0, 0, 0.5));
+    color: var(--primary);
+    filter: none;
+    background: none;
+    -webkit-text-fill-color: currentColor;
 }
 
 /* Occupancy Tracker */
@@ -450,8 +449,8 @@ section {
 
 .custom-card:hover {
     transform: translateY(-10px);
-    border-color: var(--primary);
-    box-shadow: 0 10px 30px rgba(0, 242, 255, 0.1);
+    border-color: var(--glass-border);
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
 }
 
 /* Footer */
@@ -686,7 +685,7 @@ footer .opacity-50, footer .opacity-75 {
     width: 50px;
     height: 50px;
     background: var(--primary);
-    color: #000;
+    color: #fff;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -695,7 +694,7 @@ footer .opacity-50, footer .opacity-75 {
     visibility: hidden;
     transition: 0.3s;
     z-index: 999;
-    box-shadow: var(--neon-shadow);
+    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.2);
 }
 
 .back-to-top.visible {
@@ -706,6 +705,7 @@ footer .opacity-50, footer .opacity-75 {
 .back-to-top:hover {
     transform: translateY(-5px);
     background: var(--accent);
+    color: #fff;
 }
 
 /* Custom Accordion */
@@ -722,7 +722,7 @@ footer .opacity-50, footer .opacity-75 {
 }
 
 .custom-accordion .accordion-button:not(.collapsed) {
-    background: rgba(0, 242, 255, 0.1);
+    background: rgba(2, 132, 199, 0.08);
     color: var(--primary);
     box-shadow: none;
 }
@@ -761,7 +761,7 @@ footer .opacity-50, footer .opacity-75 {
     background: var(--primary);
     border-radius: 50%;
     margin-right: 15px;
-    box-shadow: 0 0 10px var(--primary);
+    box-shadow: 0 0 8px var(--primary);
     animation: pulse 2s infinite;
 }
 
@@ -801,17 +801,17 @@ footer .opacity-50, footer .opacity-75 {
 
 .auth-page .text-primary {
     color: var(--primary) !important;
-    text-shadow: 0 0 10px rgba(0, 242, 255, 0.2);
+    text-shadow: none;
 }
 
 .auth-page .text-primary:hover {
     color: var(--accent) !important;
-    text-shadow: 0 0 15px rgba(255, 0, 255, 0.4);
+    text-shadow: none;
     text-decoration: underline !important;
 }
 
 [data-theme="light"] .auth-page .text-primary {
-    color: #0056b3 !important;
+    color: var(--primary) !important;
     text-shadow: none;
 }
 
@@ -848,9 +848,9 @@ footer .opacity-50, footer .opacity-75 {
 
 .floating-controls .btn-icon:hover {
     background: var(--primary);
-    color: #000 !important;
+    color: #fff !important;
     border-color: var(--primary);
-    box-shadow: 0 0 20px rgba(0, 242, 255, 0.4);
+    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.2);
 }
 
 [dir="rtl"] .floating-controls {
@@ -959,8 +959,8 @@ footer .opacity-50, footer .opacity-75 {
     background: var(--primary);
     border-color: var(--primary);
     transform: translateY(-3px);
-    color: #000 !important;
-    box-shadow: 0 10px 20px rgba(0, 242, 255, 0.3);
+    color: #fff !important;
+    box-shadow: 0 6px 15px rgba(2, 132, 199, 0.2);
 }
 
 .btn-social i {
@@ -1098,7 +1098,7 @@ footer .opacity-50, footer .opacity-75 {
     background: var(--primary);
     border-radius: 50%;
     transform: translateX(-50%);
-    box-shadow: 0 0 15px var(--primary);
+    box-shadow: 0 0 8px var(--primary);
     z-index: 2;
 }
 
@@ -1138,13 +1138,13 @@ footer .opacity-50, footer .opacity-75 {
     width: 80px;
     height: 80px;
     background: var(--primary);
-    color: var(--bg-body);
+    color: #fff;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 2rem;
-    box-shadow: 0 0 30px var(--primary);
+    box-shadow: 0 6px 20px rgba(2, 132, 199, 0.3);
     transition: all 0.3s ease;
     z-index: 3;
 }
@@ -1234,7 +1234,7 @@ footer .opacity-50, footer .opacity-75 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at 50% 50%, rgba(0, 242, 255, 0.05), transparent 80%);
+    background: radial-gradient(circle at 50% 50%, rgba(2, 132, 199, 0.05), transparent 80%);
     pointer-events: none;
 }
 
@@ -1253,9 +1253,9 @@ footer .opacity-50, footer .opacity-75 {
 
 .pulse-card:hover {
     background: rgba(255, 255, 255, 0.05);
-    border-color: var(--primary);
+    border-color: var(--glass-border);
     transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
 }
 
 .pulse-card .live-indicator {
@@ -1275,7 +1275,7 @@ footer .opacity-50, footer .opacity-75 {
     height: 8px;
     background: var(--primary);
     border-radius: 50%;
-    box-shadow: 0 0 10px var(--primary);
+    box-shadow: 0 0 6px var(--primary);
     animation: pulse-glow 2s infinite;
 }
 
@@ -1289,10 +1289,7 @@ footer .opacity-50, footer .opacity-75 {
     font-size: 2.5rem;
     font-weight: 800;
     margin-bottom: 0.5rem;
-    background: linear-gradient(90deg, #fff, var(--primary));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--primary);
 }
 
 .pulse-card .metric-label {
@@ -1323,7 +1320,7 @@ footer .opacity-50, footer .opacity-75 {
 .pulse-card .progress-mini-bar {
     height: 100%;
     background: var(--primary);
-    box-shadow: 0 0 10px var(--primary);
+    box-shadow: none;
     transition: width 1s ease-in-out;
 }
 
@@ -1382,16 +1379,16 @@ footer .opacity-50, footer .opacity-75 {
 .pagination .page-link:hover {
     background-color: var(--primary) !important;
     border-color: var(--primary) !important;
-    color: #000 !important;
+    color: #fff !important;
     transform: translateY(-3px);
-    box-shadow: var(--neon-shadow);
+    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.2);
 }
 
 .pagination .page-item.active .page-link {
     background-color: var(--primary) !important;
     border-color: var(--primary) !important;
-    color: #000 !important;
-    box-shadow: var(--neon-shadow);
+    color: #fff !important;
+    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.2);
 }
 
 .pagination .page-item.disabled .page-link {
